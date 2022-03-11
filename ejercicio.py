@@ -10,7 +10,7 @@ def FiltroVocales(cadena: str, vocales: list):
     for item in cadena:
         if item in vocales:
             encontradas.append(item)
-    return str(encontradas)
+    return "".join(encontradas).replace(" ", "")
 
 def FiltroConsonantes(cadena: str, vocales: list):
     cadena= list(cadena)
@@ -18,7 +18,7 @@ def FiltroConsonantes(cadena: str, vocales: list):
     for item in cadena:
         if item not in vocales:
             encontradas.append(item)
-    return str(encontradas)
+    return "".join(encontradas).replace(" ", "")
 
 
 S= "funeraria Jaramillo"
